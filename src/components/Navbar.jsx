@@ -7,7 +7,6 @@ function Navbar() {
 
 
 
-
   return (
     <header>
       <div className="logo"> <Link className='Link'>Girish Bhat</Link> </div>
