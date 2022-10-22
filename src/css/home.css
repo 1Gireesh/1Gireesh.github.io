@@ -71,6 +71,7 @@ h2{
 .typing{
   width: 100%;
   overflow: hidden;
+  animation: alternate type 3s infinite;
 }
 
 @keyframes type {

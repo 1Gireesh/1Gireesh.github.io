@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { NavHashLink as Link} from 'react-router-hash-link';
 import "../css/nav.css";
 import Typing from './Typing';
 
@@ -18,12 +19,12 @@ function Navbar() {
       </div>
       <nav className='nav-bar'>
         <ul>
-          <li><NavLink exact="true" className="Link" style={({isActive}) => isActive?({ color:"yellow" }): ({}) } to="/home" >Home</NavLink></li>
-          <li><NavLink exact="true" className="Link" style={({isActive}) => isActive?({ color:"yellow" }): ({}) } to="about" >About Me</NavLink></li>
-          <li><NavLink exact="true" className="Link" style={({isActive}) => isActive?({ color:"yellow" }): ({}) } to="/skills"  >Skills</NavLink></li>
-          <li><NavLink exact="true" className="Link" style={({isActive}) => isActive?({ color:"yellow" }): ({}) } to="/project"  >Project</NavLink></li>
-          <li><NavLink exact="true" className="Link" style={({isActive}) => isActive?({ color:"yellow" }): ({}) } to="/contact"  >Contact</NavLink></li>
-          <li><NavLink className="Link" >Resume</NavLink></li>
+          <li><Link  className="Link"  to="#home" smooth >Home</Link></li>
+          <li><Link  className="Link" smooth to="#about" >About Me</Link></li>
+          <li><Link  className="Link" smooth to="#skills"  >Skills</Link></li>
+          <li><Link  className="Link" smooth to="#project"  >Project</Link></li>
+          <li><Link  className="Link" smooth to="#contact"  >Contact</Link></li>
+          <li><Link className="Link" >Resume</Link></li>
         </ul>
       </nav>
     </header>

@@ -1,9 +1,14 @@
 
+@media only screen and (max-width: 600px) {
+  #about {
+    margin-top: 200px;
+  }
+}
 @media only screen and (max-width: 1100px) {
-    .container{
-        column-gap: 0;
-    }
-    .sec>h4{
-        font-size: large;
-    }
+  .container {
+    column-gap: 0;
+  }
+  .sec > h4 {
+    font-size: large;
+  }
 }

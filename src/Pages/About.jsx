@@ -3,11 +3,9 @@ import "../css/about.css"
 
 function About() {
   return (
-    <div>
+    <div id='about'>
       <div className='container'>
-        <img src="https://wallpapercave.com/wp/wp2465958.jpg" className='bgimg' alt="" />
         <div>
-          <img className='profileImg' src="https://avatars.githubusercontent.com/u/91236511?v=4" alt="" />
         </div>
         <div className='sec'>
           <div>

@@ -8,6 +8,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 2;
+  width: 100vw;
 }
 
 .logo {
@@ -40,15 +41,14 @@ header {
 
 /* animation hover effect for nav items */
 
-.nav-bar ul li .Link:hover{
+.nav-bar ul li .Link:hover {
   color: rgb(72, 255, 0);
 }
 
-.Link{
+.Link {
   text-decoration: none;
   color: white;
 }
-
 
 .nav-bar ul li .Link {
   display: inline-block;
@@ -56,7 +56,7 @@ header {
 }
 
 .nav-bar ul li .Link:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);
@@ -73,61 +73,59 @@ header {
   transform-origin: bottom left;
 }
 
-
-
 /* responsiveness */
 
-@media only screen and (max-width: 1320px){
-    header{
-        padding: 0 50px;
-    }
+@media only screen and (max-width: 1320px) {
+  header {
+    padding: 0 50px;
+  }
 }
 
-@media only screen and (max-width: 1100px){
-    header{
-        padding: 0 30px;
-    }
+@media only screen and (max-width: 1100px) {
+  header {
+    padding: 0 30px;
+  }
 }
 
-@media only screen and (max-width: 900px){
-    .burger{
-        display: block;
-        cursor: pointer;
-    }
-    .burger .line{
-        width: 30px;
-        height: 3px;
-        background: white;
-        margin: 6px 0;
-    }
-    .nav-bar{
-      position: absolute;
-      top: 80px;
-      left: 0;
-      right: 0;
-      z-index: 1;
-      background-color: #11101b;
-      transition: 0.3s;
-      height: 0;
-      overflow: hidden;
-    }
-    .nav-bar.active{
-      height: 400px;
-    }
+@media only screen and (max-width: 900px) {
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+  .burger .line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 6px 0;
+  }
+  .nav-bar {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #11101b;
+    transition: 0.3s;
+    height: 0;
+    overflow: hidden;
+  }
+  .nav-bar.active {
+    height: 400px;
+  }
 
-    .nav-bar.active ul{
-      opacity: 1;
-    }
+  .nav-bar.active ul {
+    opacity: 1;
+    width: 100vw;
+  }
 
-    .nav-bar ul{
-      display: block;
-      width: fit-content;
-      margin: 80px auto 0 auto;
-      opacity: 0;
-      text-align: center;
-    }
-    .nav-bar ul li .Link{
-      margin-bottom: 12px;
-
-    }
+  .nav-bar ul {
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    opacity: 0;
+    text-align: center;
+  }
+  .nav-bar ul li .Link {
+    margin-bottom: 12px;
+  }
 }
