@@ -3,10 +3,10 @@ import "../css/loader.css";
 export default function Loader() {
     return (
         <div>
-            <div class="ctn">
-                <div class="ring r1"></div>
-                <div class="ring r2"></div>
-                <div class="ring r3"></div>
+            <div className="ctn">
+                <div className="ring r1"></div>
+                <div className="ring r2"></div>
+                <div className="ring r3"></div>
             </div>
 
 

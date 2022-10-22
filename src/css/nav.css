@@ -7,12 +7,16 @@ header {
   padding: 0 100px;
   position: sticky;
   top: 0;
+  z-index: 2;
 }
 
 .logo {
   font-size: 28px;
   font-weight: bold;
   color: white;
+  font-family: serif;
+  font-style: italic;
+  letter-spacing: 1px;
 }
 
 .burger {
@@ -27,22 +31,51 @@ header {
   display: block;
   color: white;
   font-size: 20px;
-  border-radius: 50px;
-  transition: 0.4s all;
+  transition: 1s all;
   text-decoration: none;
   margin: 0 5px;
   padding: 5px;
+  border-bottom: 0px solid red;
 }
 
+/* animation hover effect for nav items */
+
 .nav-bar ul li .Link:hover{
-  background-color: white;
-  color: black;
+  color: rgb(72, 255, 0);
 }
 
 .Link{
   text-decoration: none;
   color: white;
 }
+
+
+.nav-bar ul li .Link {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-bar ul li .Link:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-bar ul li .Link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+/* responsiveness */
 
 @media only screen and (max-width: 1320px){
     header{
@@ -72,6 +105,7 @@ header {
       top: 80px;
       left: 0;
       right: 0;
+      z-index: 1;
       background-color: #11101b;
       transition: 0.3s;
       height: 0;
