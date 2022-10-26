@@ -2,7 +2,6 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { NavHashLink as Link} from 'react-router-hash-link';
 import "../css/nav.css";
-import Typing from './Typing';
 
 
 function Navbar() {

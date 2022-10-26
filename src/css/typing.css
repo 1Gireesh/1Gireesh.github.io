@@ -1,9 +1,4 @@
-.wrapper {
-  height: 100vh;
-  /*This part is important for centering*/
-  display: grid;
-  place-items: center;
-}
+
 
 .typing-demo {
   width: 22ch;

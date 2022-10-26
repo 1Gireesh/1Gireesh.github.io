@@ -1,78 +1,75 @@
-#project{
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+#project {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
-.techStack>img{
-    width: 50px;
-}
-
-.techStack{
-    display: flex;
-    gap: 20px;
+.techStack > img {
+  width: 50px;
 }
 
-.p1{
-    display: flex;
-    width: 80%;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 1px 1px 10px black;
-    margin: auto;
-    padding: 20px;
-}
-.p1>div>img{
-    width: 100%;
-}
-.p1>div{
-    font-size: larger;
-
+.techStack {
+  display: flex;
+  gap: 20px;
 }
 
-.head{
-    margin: auto;
-    text-align: center;
+.p1 {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 20px;
 }
-.bla{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    font-size: larger;
-    margin-left: 50px;
+.p1 > div > img {
+  width: 100%;
 }
-
-.tst{
-    margin-left: 100px;
-}
-button{
-    background-color: teal;
-    border: none;
-    height: 30px;
-    border-radius: 20px;
-    width: 100px;
-}
-a{
-    text-decoration: none;
-    color: white;
-    font-size: larger;
+.p1 > div {
+  font-size: larger;
 }
 
+.head {
+  margin: auto;
+  text-align: center;
+}
+.bla {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: larger;
+  margin-left: 50px;
+}
 
-@media only screen and (max-width: 600px) {
-   .p1{
+.tst {
+  margin-left: 100px;
+}
+button {
+  background-color: teal;
+  border: none;
+  height: 30px;
+  border-radius: 20px;
+  width: 100px;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+}
+
+@media only screen and (max-width: 700px) {
+  .p1 {
     display: block;
     width: 100%;
-    }
-    .techStack{
-        flex-wrap: wrap;
-        margin: 10px;
-    }
-    .techStack>img{
-        width: 25px;
-    }
   }
-  @media only screen and (max-width: 1100px) {
-    
+  .p1>div>img{
+    width: 80%;
+    margin-left: 10%;
   }
-  
+  .techStack {
+    flex-wrap: wrap;
+    margin: 10px;
+  }
+  .techStack > img {
+    width: 25px;
+  }
+}

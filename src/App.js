@@ -19,19 +19,19 @@ function App() {
     clearTimeout(id)
     id = setTimeout(() => {
       sr(0);
-    }, 1000);
+    }, 1500);
   }, []);
 
   return r ? <Loader></Loader> : (
     <div className="App">
-
       <Navbar></Navbar>
-      <Home></Home>
-      <About></About>
-      <Skills></Skills>
-      <Project></Project>
-      <Contact></Contact>
-      {/* <AllRoutes></AllRoutes> */}
+      <div>
+        <Home className="width" ></Home>
+        <About className="width" ></About>
+        <Skills className="width" ></Skills>
+        <Project className="width" ></Project>
+        <Contact className="width" ></Contact>
+      </div>
     </div>
   )
 }

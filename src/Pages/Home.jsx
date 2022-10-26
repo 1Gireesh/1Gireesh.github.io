@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import "../css/home.css";
+import { Typewriter } from 'react-simple-typewriter'
 
 function Home() {
 
@@ -17,7 +18,17 @@ let type = document.querySelector('.typing');
         <div className='sec'>
           <h1>Hello Everyone I'm</h1>
             <h1> Girish Vishveshvar Bhat</h1>
-          <div>I'm A <h2 className='typing'> FullStackWebDeveloper</h2></div>
+          <div>I'm A <div id='typewriter'>
+            <Typewriter
+              loop
+              cursor
+              cursorStyle="|"
+              typeSpeed={100}
+              deleteSpeed={100}
+              delaySpeed={1000}
+              words={["Web Developer.", "Full Stack Web Developer.", "MERN Stack Developer"]}
+            />
+          </div></div>
         </div>
       </div>
     </div>

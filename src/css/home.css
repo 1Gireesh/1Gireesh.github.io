@@ -3,7 +3,7 @@
   align-items: center;
   /* background-color: rgb(0, 0, 0); */
   column-gap: 200px;
-  height: 85vh;
+  height: 100vh;
 }
 .bgimg {
   position: absolute;
@@ -68,17 +68,3 @@ h2{
   font-size: 30px;
 }
 
-.typing{
-  width: 100%;
-  overflow: hidden;
-  animation: alternate type 3s infinite;
-}
-
-@keyframes type {
-  from{
-    width: 0;
-  }
-  to{
-    width: 100%;
-  }
-}

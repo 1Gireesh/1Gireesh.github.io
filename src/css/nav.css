@@ -4,11 +4,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 100px;
+  padding-right: 10px;
   position: sticky;
   top: 0;
   z-index: 2;
-  width: 100vw;
+  width: 99vw;
 }
 
 .logo {
@@ -22,11 +22,13 @@ header {
 
 .burger {
   display: flex;
+
 }
 .nav-bar ul {
   display: flex;
   list-style: none;
   column-gap: 10px;
+
 }
 .nav-bar ul li .Link {
   display: block;
@@ -35,7 +37,7 @@ header {
   transition: 1s all;
   text-decoration: none;
   margin: 0 5px;
-  padding: 5px;
+  /* padding: 5px; */
   border-bottom: 0px solid red;
 }
 
@@ -71,6 +73,7 @@ header {
 .nav-bar ul li .Link:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+
 }
 
 /* responsiveness */
@@ -87,7 +90,9 @@ header {
   }
 }
 
-@media only screen and (max-width: 900px) {
+
+@media only screen and (max-width: 650px) {
+  
   .burger {
     display: block;
     cursor: pointer;
@@ -105,22 +110,23 @@ header {
     right: 0;
     z-index: 1;
     background-color: #11101b;
-    transition: 0.3s;
     height: 0;
     overflow: hidden;
   }
   .nav-bar.active {
     height: 400px;
+    display: block;
   }
 
   .nav-bar.active ul {
     opacity: 1;
-    width: 100vw;
   }
 
   .nav-bar ul {
     display: block;
     width: fit-content;
+    transition: 0.4s;
+
     margin: 80px auto 0 auto;
     opacity: 0;
     text-align: center;
