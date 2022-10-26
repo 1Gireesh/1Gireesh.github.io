@@ -1,5 +1,5 @@
 {
-  "homepage": "https://1gireesh.github.io",
+  "homepage": "https://1gireesh.github.io/",
   "name": "my-port-folio",
   "version": "0.1.0",
   "private": true,
@@ -41,5 +41,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
