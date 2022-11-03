@@ -23,7 +23,7 @@
 
 @media only screen and (max-width: 800px) {
  .contain{
-  /* margin-top: 200px; */
-  /* margin-bottom: 200px; */
+  width: 100%;
+  font-size: small;
  }
 }

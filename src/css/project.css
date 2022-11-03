@@ -59,15 +59,18 @@ a {
 @media only screen and (max-width: 700px) {
   .p1 {
     display: block;
-    width: 100%;
+    width: 90%;
   }
-  .p1>div>img{
-    width: 80%;
-    margin-left: 10%;
+  .p1>{
+    justify-content: center;
+    align-items: center;
   }
   .techStack {
     flex-wrap: wrap;
     margin: 10px;
+  }
+  button{
+    margin: 20px;
   }
   .techStack > img {
     width: 25px;

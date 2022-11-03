@@ -3,20 +3,23 @@
   align-items: center;
   /* background-color: rgb(0, 0, 0); */
   column-gap: 200px;
-  height: 100vh;
+}
+#home{
+  /* margin-bottom: 100px; */
 }
 .bgimg {
   position: absolute;
   opacity: 0.4;
 }
-.container>div{
-    z-index: 1;
+.container > div {
+  z-index: 1;
 }
-h1{
-    font-size: 40px;
+
+h1 {
+  font-size: 40px;
 }
-h2{
-    font-size: 30px;
+h2 {
+  font-size: 30px;
 }
 .profileImg {
   width: 400px;
@@ -33,38 +36,42 @@ h2{
 }
 
 @media only screen and (max-width: 800px) {
-    .profileImg{
-        width: 300px;
-    }
+  .profileImg {
+    width: 300px;
+  }
 }
 
 @media only screen and (max-width: 1100px) {
-    .container{
-        /* column-gap: 0; */
-    }
+  .container {
+    /* column-gap: 0; */
+  }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .container {
     flex-direction: column;
+    margin-bottom: 100px;
   }
   .profileImg {
     width: 200px;
+    margin-top: 100px;
   }
-  .bgimg{
+  .bgimg {
     height: 100vh;
   }
-  h1{
+  h1 {
     font-size: 25px;
-}
-h2{
+  }
+  h2 {
     font-size: 20px;
-}
+  }
+  .sec {
+    width: 350px;
+  }
 }
 
 /* typing anime */
 
-.sec>div{
+.sec > div {
   font-size: 30px;
 }
-

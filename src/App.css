@@ -1,18 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&family=Raleway:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&family=Ubuntu&display=swap');
 
-*{
-    font-family: 'Libre Franklin', sans-serif;
-    font-family: 'Ubuntu', sans-serif;
+* {
+    font-family: "Libre Franklin", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
-.App>div{
+.App {
+  max-width: 100vw;
+  overflow-x: hidden;
+  flex-direction: column;
 }
-
-.App{
-    max-width: 100vw;
-    flex-direction: column;
-}
-
-
-

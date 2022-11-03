@@ -1,11 +1,22 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import { NavHashLink as Link} from 'react-router-hash-link';
+import React, { useState } from 'react';
+import { NavHashLink as Link } from 'react-router-hash-link';
 import "../css/nav.css";
+import { NavLink } from 'react-router-dom';
 
 
 function Navbar() {
 
+  let links = document.querySelectorAll('.Link');
+
+  function handleClic(e) {
+    for (let i = 0; i < links.length; i++) {
+      links[i].style.color = "white";
+      links[i].style.fontStyle = "normal";
+    }
+    e.target.style.color = "parrotgreen";
+    e.target.style.fontStyles = "bold";
+    document.querySelector(".nav-bar").classList.toggle("active")
+  }
 
 
   return (
@@ -18,12 +29,24 @@ function Navbar() {
       </div>
       <nav className='nav-bar'>
         <ul>
-          <li><Link  className="Link"  to="#home" smooth >Home</Link></li>
-          <li><Link  className="Link" smooth to="#about" >About Me</Link></li>
-          <li><Link  className="Link" smooth to="#skills"  >Skills</Link></li>
-          <li><Link  className="Link" smooth to="#project"  >Project</Link></li>
-          <li><Link  className="Link" smooth to="#contact"  >Contact</Link></li>
-          <li><Link className="Link" >Resume</Link></li>
+          <li><Link
+
+            onClick={handleClic} className="Link" to="#home" smooth >Home</Link></li>
+          <li><Link
+
+            onClick={handleClic} className="Link" smooth to="#about" >About Me</Link></li>
+          <li><Link
+
+            onClick={handleClic} className="Link" smooth to="#skills"  >Skills</Link></li>
+          <li><Link
+
+            onClick={handleClic} className="Link" smooth to="#project"  >Project</Link></li>
+          <li><Link
+
+            onClick={handleClic} className="Link" smooth to="#contact"  >Contact</Link></li>
+          <li><Link
+
+            onClick={handleClic} className="Link" style={{ marginRight: "50px" }} >Resume</Link></li>
         </ul>
       </nav>
     </header>
