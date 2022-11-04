@@ -9,7 +9,9 @@ header {
   z-index: 2;
   width: 99vw;
 }
-
+.res{
+  margin-right: 50px;
+}
 .logo {
   font-size: 28px;
   font-weight: bold;

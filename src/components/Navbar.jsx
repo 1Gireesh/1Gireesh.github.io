@@ -44,9 +44,10 @@ function Navbar() {
           <li><Link
 
             onClick={handleClic} className="Link" smooth to="#contact"  >Contact</Link></li>
-          <li><Link
-
-            onClick={handleClic} className="Link" style={{ marginRight: "50px" }} >Resume</Link></li>
+          <li><a
+          target="_blank"
+          href='https://drive.google.com/file/d/1F_gCF6RI2kHbEER4ld6Wvm6DCy22rwxL/view?usp=share_link'
+            onClick={handleClic} className="Link resm"  >Resume</a></li>
         </ul>
       </nav>
     </header>

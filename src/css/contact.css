@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-box {
+  width: 90%;
+  margin: 80px 50px;
+  display: flex;
+  box-shadow: 1px 1px 10px black;
+}
+
+.contact-links,
+.contact-form-wrapper {
+  width: 50%;
+  padding: 8% 5% 10% 5%;
+}
+
+.contact-links {
+  max-width: 90%;
+  color: black;
+  border-radius: 10px 0 0 10px;
+}
+
+.contact-form-wrapper {
+  border-radius: 0 10px 10px 0;
+}
+
+@media only screen and (max-width: 800px) {
+  .contact-links,
+  .contact-form-wrapper {
+    width: 100%;
+  }
+
+  .contact-links {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .contact-form-wrapper {
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .contact-box {
+    width: 95%;
+    margin: 8% 5%;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .contact-box {
+    width: 95%;
+    margin: 8% 5%;
+    flex-direction: column;
+  }
+}
+
+h2 {
+  font-family: "Arimo", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: clamp(30px, 6vw, 60px);
+  letter-spacing: 2px;
+  text-align: center;
+  transform: scale(0.95, 1);
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.link {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.cimg {
+  width: 45px;
+  height: 45px;
+  filter: hue-rotate(220deg) drop-shadow(2px 4px 4px #0006);
+  transition: 0.2s;
+  user-select: none;
+}
+
+.cimg:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.cimg:active {
+  transform: scale(1.1, 1.1);
+  filter: hue-rotate(220deg) drop-shadow(2px 4px 4px #222) sepia(0.3);
+}
+
+.form-item {
+  position: relative;
+}
+
+label,
+input,
+textarea {
+  font-family: "Poppins", sans-serif;
+}
+
+label {
+  position: absolute;
+  top: 10px;
+  left: 2%;
+  color: #999;
+  font-size: clamp(14px, 1.5vw, 18px);
+  pointer-events: none;
+  user-select: none;
+}
+
+input,
+textarea {
+  width: 85%;
+  outline: 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 12px;
+  font-size: clamp(15px, 1.5vw, 18px);
+}
+
+input:focus + label,
+input:valid + label,
+textarea:focus + label,
+textarea:valid + label {
+  font-size: clamp(13px, 1.3vw, 16px);
+  color: #777;
+  top: -20px;
+  transition: all 0.225s ease;
+}
+
+.submit-btn:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.submit-btn:active {
+  transform: scale(1.1, 1.1);
+  filter: sepia(0.5);
+}
+
+@media only screen and (max-width: 800px) {
+  h2 {
+    font-size: clamp(40px, 10vw, 60px);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  h2 {
+    font-size: clamp(30px, 12vw, 60px);
+  }
+
+  .links {
+    padding-top: 30px;
+  }
+
+  .cimg {
+    width: 38px;
+    height: 38px;
+  }
+}

@@ -28,7 +28,9 @@ let type = document.querySelector('.typing');
               delaySpeed={1000}
               words={["Web Developer.", "Full Stack Web Developer.", "MERN Stack Developer"]}
             />
-          </div></div>
+          </div>
+          <h3>See my resume</h3>
+          </div>
         </div>
       </div>
     </div>
