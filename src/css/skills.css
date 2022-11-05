@@ -47,10 +47,12 @@
 }
 .skills-box {
   padding: 1rem;
-  color: #000;
+  /* color: #000; */
   cursor: pointer;
 }
-
+h2{
+  font-size: 25px;
+}
 .skills-box:hover .skills-img {
   transform: translateX(-20px);
 }

@@ -13,7 +13,7 @@ export default function Project() {
 
       <div className='p1'>
         <div>
-          <img src={monday} alt="Boat project image" />
+          <img  src={monday} className='pimg' alt="Boat project image" />
           <div className='tst'>
             <h2 className='projectText'>Tech Stack</h2>
             <div className='techStack'>
@@ -40,7 +40,7 @@ export default function Project() {
 
       <div className='p1'>
         <div >
-          <img src={wrike} alt="Boat project image" />
+          <img className='pimg2' src={wrike} alt="Boat project image" />
           <div className='tst'>
             <h2 className='projectText'>Tech Stack</h2>
             <div className='techStack'>
@@ -59,6 +59,31 @@ export default function Project() {
           <div className='p1Btn'>
             <button><a href="https://funny-snickerdoodle-b6b996.netlify.app/" target='_blank' >Live</a></button>
             <button><a href="https://github.com/1Gireesh/wrike.com-clone" target='_blank' >View Code</a> </button>
+          </div>
+        </div>
+        
+      </div>
+      <div className='p1'>
+        <div >
+          <img className='pimg3' src="https://angel.co/cdn-cgi/image/width=732,height=457.5,fit=cover,gravity=0.5x0.5,quality=90,format=auto/https://d2gn4xht817m0g.cloudfront.net/p/media_uploads/images/original/000/667/163/667163-cf378423ea9020b882e133adb80f17b6ffee5dc8.jpg" alt="Boat project image" />
+          <div className='tst'>
+            <h2 className='projectText'>Tech Stack</h2>
+            <div className='techStack'>
+              <img src="https://cdn-icons-png.flaticon.com/512/1199/1199124.png" alt="" />
+              <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="" />
+              <img src="https://cdn-icons-png.flaticon.com/512/1051/1051277.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div className='bla'>
+          <h2 className='projectText'>fatsecret.com clone</h2>
+          <li className='projectUl'>fatsecret is a food and helth caring website</li>
+          <li className='projectUl'>Users can login and SignUp</li>
+          <li className='projectUl'>User can see the food recomedations in the Home Page</li>
+          <div className='p1Btn'>
+            <button><a href="https://funny-snickerdoodle-b6b996.netlify.app/" target='_blank' >Live</a></button>
+            <button><a href="https://github.com/1Gireesh/fatsecret-clone" target='_blank' >View Code</a> </button>
           </div>
         </div>
       </div>

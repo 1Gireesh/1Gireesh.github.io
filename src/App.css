@@ -10,4 +10,6 @@
   max-width: 100vw;
   overflow-x: hidden;
   flex-direction: column;
+  background: rgb(32, 32, 119);
+  color: white !important;
 }

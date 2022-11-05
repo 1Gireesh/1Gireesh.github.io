@@ -19,6 +19,7 @@ let type = document.querySelector('.typing');
           <h1>Hello Everyone I'm</h1>
             <h1> Girish Vishveshvar Bhat</h1>
           <div>I'm A <div id='typewriter'>
+              
             <Typewriter
               loop
               cursor
@@ -34,7 +35,9 @@ let type = document.querySelector('.typing');
           <a
           target="_blank"
           href='https://drive.google.com/file/d/1F_gCF6RI2kHbEER4ld6Wvm6DCy22rwxL/view?usp=share_link'
-          className="resume"  >Resume</a>
+          className="resume"
+          download={true}
+          >Resume</a>
           </button>
           </div>
         </div>

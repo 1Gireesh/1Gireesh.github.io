@@ -9,7 +9,7 @@
   margin-bottom: 100px;
 }
 .resume{
-  color: black;
+  color: rgb(255, 255, 255);
 }
 .bgimg {
   position: absolute;
@@ -40,7 +40,7 @@ h2 {
 .sec {
   z-index: 1;
   display: flex;
-  color: rgb(0, 0, 0);
+  /* color: rgb(255, 255, 255); */
   flex-direction: column;
   gap: 30px;
 }

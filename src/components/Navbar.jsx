@@ -15,6 +15,8 @@ function Navbar() {
     }
     e.target.style.color = "parrotgreen";
     e.target.style.fontStyles = "bold";
+    console.log(window.innerWidth);
+    if(window.innerWidth<800)
     document.querySelector(".nav-bar").classList.toggle("active")
   }
 
