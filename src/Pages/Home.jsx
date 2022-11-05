@@ -30,6 +30,12 @@ let type = document.querySelector('.typing');
             />
           </div>
           <h3>See my resume</h3>
+          <button className='btn'>
+          <a
+          target="_blank"
+          href='https://drive.google.com/file/d/1F_gCF6RI2kHbEER4ld6Wvm6DCy22rwxL/view?usp=share_link'
+          className="resume"  >Resume</a>
+          </button>
           </div>
         </div>
       </div>

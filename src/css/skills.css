@@ -26,10 +26,18 @@
   background-color: #2ecc71;
   border-radius: 2px;
 }
+.bkd>div{
+  display: flex;
+  margin-top: 30px;
+  flex-direction: row;
+  justify-content: center;
+  gap: 150px;
+  flex-wrap: wrap;
+}
 
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -88,6 +96,20 @@
   color: #333;
   margin-top: 0.5rem;
 }
+.skillDes{
+  text-align: center;
+  margin: 30px;
+}
+
+.haba{
+  display: flex;
+  justify-content: center;
+}
+.stats{
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (max-width: 990px) {
   .skills-container {
     grid-template-columns: repeat(2, 1fr);
@@ -99,5 +121,8 @@
   .skills-container {
     grid-template-columns: 2fr;
     padding: 2rem 50px;
-  }
+  } .haba,.stats{
+      flex-direction: column;
+      align-items: center;
+    }
 }
