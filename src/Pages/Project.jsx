@@ -82,7 +82,7 @@ export default function Project() {
           <li className='projectUl'>Users can login and SignUp</li>
           <li className='projectUl'>User can see the food recomedations in the Home Page</li>
           <div className='p1Btn'>
-            <button><a href="https://funny-snickerdoodle-b6b996.netlify.app/" target='_blank' >Live</a></button>
+            <button><a href="https://genuine-donut-0306d9.netlify.app/" target='_blank' >Live</a></button>
             <button><a href="https://github.com/1Gireesh/fatsecret-clone" target='_blank' >View Code</a> </button>
           </div>
         </div>
