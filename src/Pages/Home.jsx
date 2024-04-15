@@ -4,9 +4,9 @@ import { Typewriter } from 'react-simple-typewriter'
 
 function Home() {
 
-  
 
-let type = document.querySelector('.typing');
+
+  let type = document.querySelector('.typing');
 
 
   return (
@@ -17,9 +17,9 @@ let type = document.querySelector('.typing');
         </div>
         <div className='sec'>
           <h1>Hello Everyone I'm</h1>
-            <h1> Girish Vishveshvar Bhat</h1>
+          <h1> Girish Vishveshvar Bhat</h1>
           <div>I'm A <div id='typewriter'>
-              
+
             <Typewriter
               loop
               cursor
@@ -30,15 +30,15 @@ let type = document.querySelector('.typing');
               words={["Web Developer.", "Full Stack Web Developer.", "MERN Stack Developer"]}
             />
           </div>
-          <h3>See my resume</h3>
-          <button className='btn'>
-          <a
-          target="_blank"
-          href='https://drive.google.com/file/d/1F_gCF6RI2kHbEER4ld6Wvm6DCy22rwxL/view?usp=share_link'
-          className="resume"
-          download={true}
-          >Resume</a>
-          </button>
+            <h3>See my resume</h3>
+            <button className='btn'>
+              <a
+                target="_blank"
+                href='https://drive.google.com/file/d/1F_gCF6RI2kHbEER4ld6Wvm6DCy22rwxL/view?usp=share_link'
+                className="resume"
+                download={true}
+              >Resume</a>
+            </button>
           </div>
         </div>
       </div>

@@ -1,12 +1,12 @@
 header {
   height: 80px;
-  background: #11101b;
+  /* background: #11101b; */
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 1;
   width: 99vw;
 }
 .res{

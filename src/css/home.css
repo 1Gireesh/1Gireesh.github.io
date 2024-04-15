@@ -7,6 +7,7 @@
 }
 #home{
   margin-bottom: 100px;
+  z-index: 2;
 }
 .resume{
   color: rgb(255, 255, 255);
@@ -24,11 +25,14 @@
  top: 100px;
 }
 
-h1 {
+#home h1 {
   font-size: 40px;
+  margin: 0;
+  color: white;
 }
 h2 {
   font-size: 30px;
+  margin: 0;
 }
 .profileImg {
   width: 300px;

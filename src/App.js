@@ -8,6 +8,7 @@ import Home from './Pages/Home';
 import Loader from './Pages/Loader';
 import Project from './Pages/Project';
 import Skills from './Pages/Skills';
+import BackGround from './components/BackGround';
 
 
 function App() {
@@ -23,16 +24,19 @@ function App() {
   }, []);
 
   return r ? <Loader></Loader> : (
-    <div className="App">
-      <Navbar></Navbar>
-      <div>
-        <Home className="width" ></Home>
-        <About className="width" ></About>
-        <Skills className="width" ></Skills>
-        <Project className="width" ></Project>
-        <Contact className="width" ></Contact>
+    <>
+      <BackGround />
+      <div className="App">
+        <Navbar></Navbar>
+        <div>
+          <Home className="width" ></Home>
+          <About className="width" ></About>
+          <Skills className="width" ></Skills>
+          <Project className="width" ></Project>
+          <Contact className="width" ></Contact>
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 
