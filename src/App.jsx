@@ -14,14 +14,14 @@ import BackGround from './components/BackGround';
 function App() {
 
   let id;
-  let [r, sr] = useState(1);
+  let [r, sr] = useState(0);
 
-  useEffect(() => {
-    clearTimeout(id)
-    id = setTimeout(() => {
-      sr(0);
-    }, 1500);
-  }, []);
+  // useEffect(() => {
+  //   clearTimeout(id)
+  //   id = setTimeout(() => {
+  //     sr(0);
+  //   }, 1500);
+  // }, []);
 
   return r ? <Loader></Loader> : (
     <>
