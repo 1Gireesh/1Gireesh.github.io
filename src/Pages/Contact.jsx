@@ -9,7 +9,7 @@ export default function Contact() {
         <h2>CONTACT</h2>
         <div className="links">
           <div className="link">
-            <a target="_blank" href="https://www.linkedin.com/in/gireesh-bhat-51bba8238/"><img className="cimg" src="https://i.postimg.cc/m2mg2Hjm/linkedin.png" alt="linkedin"/></a>
+            <a target="_blank" href="https://www.linkedin.com/in/girish-bhat-51bba8238/"><img className="cimg" src="https://i.postimg.cc/m2mg2Hjm/linkedin.png" alt="linkedin"/></a>
           </div>
           <div className="link">
             <a target="_blank" href="https://github.com/1Gireesh"><img className="cimg" src="https://i.postimg.cc/YCV2QBJg/github.png" alt="github"/></a>

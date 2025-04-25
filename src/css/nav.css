@@ -1,17 +1,19 @@
 header {
   height: 80px;
-  /* background: #11101b; */
+  background: #11101b52;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 3;
   width: 99vw;
 }
-.res{
+
+.res {
   margin-right: 50px;
 }
+
 .logo {
   font-size: 28px;
   font-weight: bold;
@@ -25,13 +27,16 @@ header {
   display: flex;
   margin-right: 50px;
 }
-.nav-bar ul {
+
+.nav-links {
   display: flex;
   list-style: none;
   column-gap: 10px;
-
+  justify-content: center;
+  align-items: center;
 }
-.nav-bar ul li .Link {
+
+.nav-links .Link {
   display: block;
   color: white;
   font-size: 20px;
@@ -43,7 +48,7 @@ header {
 
 /* animation hover effect for nav items */
 
-.nav-bar ul li .Link:hover {
+.nav-links .Link:hover {
   color: rgb(72, 255, 0) !important;
 }
 
@@ -52,12 +57,12 @@ header {
   color: white;
 }
 
-.nav-bar ul li .Link {
+.nav-links .Link {
   display: inline-block;
   position: relative;
 }
 
-.nav-bar ul li .Link:after {
+.nav-links .Link:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -70,10 +75,9 @@ header {
   transition: transform 0.25s ease-out;
 }
 
-.nav-bar ul li .Link:hover:after {
+.nav-links .Link:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
-
 }
 
 /* responsiveness */
@@ -92,17 +96,19 @@ header {
 
 
 @media only screen and (max-width: 950px) {
-  
+
   .burger {
     display: block;
     cursor: pointer;
   }
+
   .burger .line {
     width: 30px;
     height: 3px;
     background: white;
     margin: 6px 0;
   }
+
   .nav-bar {
     position: absolute;
     top: 80px;
@@ -112,26 +118,36 @@ header {
     background-color: #11101b;
     height: 0;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
   }
+
   .nav-bar.active {
-    height: 400px;
+    height: 100vh;
     display: block;
   }
 
-  .nav-bar.active ul {
+  .nav-bar.active .nav-links {
     opacity: 1;
   }
 
-  .nav-bar ul {
-    display: block;
+  .nav-links {
     width: fit-content;
     transition: 0.4s;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 80px auto 0 auto;
     opacity: 0;
+    gap: 10px;
     text-align: center;
   }
-  .nav-bar ul li .Link {
+
+  .nav-links .Link {
     margin-bottom: 12px;
+    display: block;
   }
 }

@@ -13,7 +13,7 @@ function Home() {
     <div id='home'>
       <div className='container'>
         <div>
-          <img className='profileImg' src="https://avatars.githubusercontent.com/u/91236511?v=4" alt="" />
+          <img className='profileImg' src="/public/images/self.jpg" alt="" />
         </div>
         <div className='sec'>
           <h1>Hello Everyone I'm</h1>

@@ -12,8 +12,12 @@ const skills = [
         name: 'JavaScript',
       },
       {
-        img: '/images/ts.png',
-        name: 'Typescript',
+        img: '/images/java.png',
+        name: 'Java',
+      },
+      {
+        img: '/images/python.png',
+        name: 'Python',
       }
     ],
   },
@@ -35,7 +39,7 @@ const skills = [
     ],
   },
   {
-    category: 'Web Development',
+    category: 'Frameworks',
     list: [
       {
         img: '/images/react.png',
@@ -43,34 +47,29 @@ const skills = [
       },
       {
         img:
-          'http://pluspng.com/img-png/nodejs-logo-png-nice-images-collection-node-js-desktop-wallpapers-370.png',
-        name: 'Node.js',
+          '/images/express.png',
+        name: 'Express.js',
       },
       {
         img: '/images/react-native.png',
         name: 'React_Native',
       },
       {
-        img: '/images/bootstrap.png',
-        name: 'Bootstrap',
+        img: '/images/nextjs.png',
+        name: 'Next.js',
       },
       {
-        img: '/images/jquery.png',
-        name: 'JQuery',
+        img: '/images/flask.png',
+        name: 'Flask',
       },
       {
-        img:
-          '/images/html-5-logo-png-transparent.png',
-        name: 'HTML',
+        img: '/images/flutter.png',
+        name: 'Flutter',
       },
-      {
-        img: 'https://upload.wikimedia.org/wikipedia/commons/3/3d/CSS.3.svg',
-        name: 'CSS',
-      }
     ],
   },
   {
-    category: 'Others',
+    category: 'Tools',
     list: [
       {
         img: '/images/docker.png',
@@ -81,9 +80,13 @@ const skills = [
         name: 'Git',
       },
       {
-        img: '/images/postman.svg',
-        name: 'Postman',
+        img: '/images/vim.svg',
+        name: 'Vim',
       },
+      {
+        img: '/images/linux.png',
+        name: 'Linux',
+      }
     ],
   },
 ];
@@ -105,7 +108,7 @@ function SkillItem(props) {
 }
 
 function Skills(props) {
-  return <section id="skill">
+  return <section id="skills">
     <h1>Skills </h1>
       <div className="skill-cols">
         {skills.map((group) => <div key={group.category}>
