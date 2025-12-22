@@ -1,35 +1,347 @@
 #about {
   max-width: 100vw;
+  min-height: 100vh;
 }
+
 .contain {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 50px;
-  width: 80%;
+  gap: 40px;
+  width: 85%;
+  max-width: 1200px;
   margin: auto;
   margin-top: 0;
-  margin-bottom: 250px;
+  margin-bottom: 100px;
   text-align: center;
+  padding: 20px;
 }
+
+.about-header {
+  margin-top: 150px;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.title-underline {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #00d4ff, #7b2ff7);
+  margin: 0 auto;
+  border-radius: 2px;
+  animation: expandWidth 0.8s ease-out;
+}
+
 .type {
-  margin-top: 200px;
-  font-size: 35px;
+  margin-top: 30px;
+  font-size: 38px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: fadeInUp 0.8s ease-out 0.2s backwards;
 }
+
 .abt {
-  font-size: 25px;
-  padding: 35px;
-  line-height: 45px;
-  /* color: rgb(255, 255, 255); */
+  font-size: 22px;
+  padding: 25px 40px;
+  line-height: 40px;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  animation: fadeIn 1s ease-out 0.4s backwards;
+  transition: all 0.3s ease;
 }
 
+.abt:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(0, 212, 255, 0.3);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
+}
 
+/* Education Section */
+.education-section {
+  width: 100%;
+  margin-top: 60px;
+  animation: fadeInUp 1s ease-out 0.6s backwards;
+}
 
+.education-section .section-title {
+  font-size: 38px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.icon {
+  font-size: 42px;
+  animation: bounce 2s infinite;
+}
+
+.education-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.education-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 35px 25px;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
+
+.education-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.education-card:hover::before {
+  left: 100%;
+}
+
+.education-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  border-color: rgba(0, 212, 255, 0.5);
+  box-shadow: 0 15px 40px rgba(0, 212, 255, 0.3);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.education-icon {
+  font-size: 50px;
+  margin-bottom: 20px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.education-degree {
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.education-institution {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.education-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.education-status.ongoing {
+  background: rgba(0, 212, 255, 0.15);
+  color: #00d4ff;
+  border: 1px solid rgba(0, 212, 255, 0.3);
+}
+
+.education-status.ongoing .status-dot {
+  background: #00d4ff;
+}
+
+.education-status.completed {
+  background: rgba(123, 47, 247, 0.15);
+  color: #7b2ff7;
+  border: 1px solid rgba(123, 47, 247, 0.3);
+}
+
+.education-status.completed .status-dot {
+  background: #7b2ff7;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes expandWidth {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80px;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
+}
+
+/* Responsive Design */
 @media only screen and (max-width: 800px) {
   .contain {
-    width: 100%;
-    font-size: small;
+    width: 95%;
+    padding: 15px;
+    gap: 30px;
   }
   
+  .about-header {
+    margin-top: 100px;
+  }
+  
+  .section-title {
+    font-size: 32px;
+  }
+  
+  .type {
+    font-size: 28px;
+    margin-top: 20px;
+  }
+  
+  .abt {
+    font-size: 18px;
+    padding: 20px 25px;
+    line-height: 32px;
+  }
+  
+  .education-section .section-title {
+    font-size: 28px;
+    gap: 10px;
+  }
+  
+  .icon {
+    font-size: 32px;
+  }
+  
+  .education-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .education-card {
+    padding: 30px 20px;
+  }
+  
+  .education-degree {
+    font-size: 20px;
+  }
+  
+  .education-institution {
+    font-size: 16px;
+  }
+  
+  .education-icon {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .section-title {
+    font-size: 26px;
+  }
+  
+  .type {
+    font-size: 24px;
+  }
+  
+  .abt {
+    font-size: 16px;
+    padding: 18px 20px;
+    line-height: 28px;
+  }
+  
+  .education-section .section-title {
+    font-size: 24px;
+    flex-direction: column;
+    gap: 5px;
+  }
 }
